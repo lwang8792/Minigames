@@ -1,4 +1,8 @@
-# Group10 Minigames Project
+# Minigames 
+
+# Note
+
+This repository is a reupload of a collaborative project originally developed by lwang8792, MattsOk808, and shepcdow. The GitHub contributor list may not reflect all original contributors.
 
 ## Running the Web Interface
 
