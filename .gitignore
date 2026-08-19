@@ -1,0 +1,7 @@
+node_modules/
+minigames.db
+.vscode/
+TestCommandParser
+TestConnectionsGame
+connections
+minigames

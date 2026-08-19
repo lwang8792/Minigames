@@ -1,0 +1,120 @@
+<!--Main webpage for project.
+Displays interface where users play game-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Minigames</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Nav bar -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <button id="back-btn" class="nav-btn hidden" onclick="navigate('menu')">&larr; Back</button>
+      <h1 id="nav-title">Daily Minigames</h1>
+      <button id="logout-btn" class="nav-btn hidden" onclick="navigate('login')">Log Out</button>
+    </div>
+  </nav>
+
+  <!-- Login screen -->
+  <div id="screen-login" class="screen active">
+    <div class="login-container">
+      <h2 class="login-heading">Daily Minigames</h2>
+      <p class="login-subheading">Sign in to play and track your scores</p>
+      <form id="login-form" class="login-form">
+        <input type="text" id="login-username" placeholder="Username" autocomplete="username" required>
+        <input type="password" id="login-password" placeholder="Password" autocomplete="current-password" required>
+        <button type="submit" class="login-btn">Log In</button>
+        <button type="button" id="register-btn" class="login-btn register-btn">Create Account</button>
+        <p id="login-error" class="login-error"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Menu screen -->
+  <div id="screen-menu" class="screen">
+    <div class="menu-header">
+      <h2 id="menu-greeting">Choose a Game</h2>
+      <p>Pick a challenge and start playing</p>
+    </div>
+    <div class="menu-grid">
+      <button class="menu-card" onclick="navigate('connections')">
+        <span class="card-icon-wrap"><span class="card-icon">&#x1F517;</span></span>
+        <span class="card-title">Connections</span>
+        <span class="card-desc">Group 16 words into 4 categories</span>
+      </button>
+      <button class="menu-card" onclick="navigate('wordle')">
+        <span class="card-icon-wrap"><span class="card-icon">&#x1F520;</span></span>
+        <span class="card-title">Wordle</span>
+        <span class="card-desc">Guess the 5-letter word</span>
+      </button>
+      <button class="menu-card" onclick="navigate('sudoku')">
+        <span class="card-icon-wrap"><span class="card-icon">&#x1F522;</span></span>
+        <span class="card-title">Sudoku</span>
+        <span class="card-desc">Fill the 9x9 grid</span>
+      </button>
+      <button class="menu-card" onclick="navigate('memorymatch')">
+        <span class="card-icon-wrap"><span class="card-icon">&#x1F0CF;</span></span>
+        <span class="card-title">Memory Match</span>
+        <span class="card-desc">Flip cards and find pairs</span>
+      </button>
+      <button class="menu-card" onclick="navigate('friends')">
+        <span class="card-icon-wrap"><span class="card-icon">&#x1F465;</span></span>
+        <span class="card-title">Friends</span>
+        <span class="card-desc">Manage your friends list</span>
+      </button>
+      <button class="menu-card" onclick="navigate('scoreboard')">
+        <span class="card-icon-wrap"><span class="card-icon">&#x1F3C6;</span></span>
+        <span class="card-title">Scoreboard</span>
+        <span class="card-desc">See scores + time spent</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Connections screen -->
+  <div id="screen-connections" class="screen">
+    <div id="connections-root"></div>
+  </div>
+
+  <!-- Wordle screen -->
+  <div id="screen-wordle" class="screen">
+    <div id="wordle-root"></div>
+  </div>
+
+  <!-- Sudoku screen -->
+  <div id="screen-sudoku" class="screen">
+    <div id="sudoku-root"></div>
+  </div>
+
+  <!-- Memory Match screen -->
+  <div id="screen-memorymatch" class="screen">
+    <div id="memorymatch-root"></div>
+  </div>
+
+  <!-- Friends screen -->
+  <div id="screen-friends" class="screen">
+    <div id="friends-root"></div>
+  </div>
+
+  <div id="screen-scoreboard" class="screen">
+    <div id="scoreboard-root"></div>
+  </div>
+
+  <script defer src="js/login.js"></script>
+  <script defer src="js/data.js"></script>
+  <script defer src="js/scoreboard.js"></script>
+  <script defer src="js/connections.js"></script>
+  <script defer src="js/wordle.js"></script>
+  <script defer src="js/sudoku.js"></script>
+  <script defer src="js/memorymatch.js"></script>
+  <script defer src="js/friends.js"></script>
+  <script defer src="js/app.js"></script>
+</body>
+</html>
