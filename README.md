@@ -2,7 +2,7 @@
 
 Our website, Daily Minigames, is a web platform that offers quick puzzle games like Wordle, Connections, Sudoku, and Memory Match that users can play during short breaks. It also includes features like user accounts, score tracking, and a friends system to make the experience more interactive.
 
-# Note
+## Note
 
 This repository is a reupload of a collaborative project originally developed by lwang8792, MattsOk808, and shepcdow. The GitHub contributor list may not reflect all original contributors.
 
